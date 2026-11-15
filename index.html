@@ -17,12 +17,12 @@ header{padding:22px 2px 16px;display:flex;justify-content:space-between;align-it
 .nav{position:fixed;bottom:0;left:0;right:0;background:#101b2bed;backdrop-filter:blur(18px);border-top:1px solid var(--line);display:flex;justify-content:center;padding:8px 5px calc(8px + env(safe-area-inset-bottom));z-index:5}.nav button{flex:1;max-width:150px;background:transparent;color:var(--muted);padding:9px 2px;font-size:11px}.nav button.active{color:var(--blue);background:#233653}
 .row{display:flex;justify-content:space-between;align-items:center;gap:10px}.item{padding:13px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}.pill{font-size:11px;padding:5px 8px;border-radius:20px;background:#25364d;color:#c6d8ef}.pill.green{background:#153d35;color:#80e6bc}.pill.red{background:#492630;color:#ffabb1}.pill.gold{background:#493d24;color:#ffdb8b}
 .progress{height:9px;background:#29384e;border-radius:20px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:var(--green);border-radius:20px}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.actions button{flex:1}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:stretch;width:100%}.formgrid>div,.manual-row>div{min-width:0;width:100%}.formgrid label{height:40px;min-height:40px;display:flex;align-items:flex-end;line-height:1.25;margin:10px 0 6px}.formgrid input,.formgrid select,.manual-row input{display:block;box-sizing:border-box;width:100%;min-width:0;height:50px;max-width:100%;margin:0;padding:0 12px;line-height:normal}.formgrid input[type=date]{appearance:none;-webkit-appearance:none;min-height:50px}.formgrid input[type=number]{appearance:textfield;-moz-appearance:textfield}.formgrid select{padding-right:28px}.manual-row input{padding:0 12px}.hidden{display:none!important}
-.installment{background:#101c2e;border:1px solid var(--line);border-radius:12px;padding:10px;margin-top:8px}.installment.pastdue{border-color:#a94b57}.installment.done{border-color:#287b5c}.manual-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:8px 0;align-items:end}.manual-row label{min-height:34px;display:flex;align-items:flex-end}.center{min-height:100dvh;display:grid;place-items:center;padding:20px}.auth{width:min(420px,100%);text-align:center}.logo{font-size:42px;margin-bottom:10px}.auth .card{text-align:left}.notice{background:#26364c;border-radius:12px;padding:11px;color:#c6d8ef;font-size:12px;line-height:1.5}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.actions button{flex:1}.formgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;align-items:stretch;width:100%}.formgrid>div,.manual-row>div{min-width:0;width:100%}.formgrid label{height:auto;min-height:0;display:block;line-height:1.3;margin:12px 0 6px}.formgrid input,.formgrid select,.manual-row input{display:block;box-sizing:border-box;width:100%;min-width:0;height:50px;max-width:100%;margin:0;padding:0 12px;line-height:normal}.formgrid input[type=date]{appearance:none;-webkit-appearance:none;min-height:50px}.formgrid input[type=number]{appearance:textfield;-moz-appearance:textfield}.formgrid select{padding-right:28px}.manual-row input{padding:0 12px}.hidden{display:none!important}
+.installment{background:#101c2e;border:1px solid var(--line);border-radius:12px;padding:10px;margin-top:8px}.installment.pastdue{border-color:#a94b57}.installment.done{border-color:#287b5c}.manual-row{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin:12px 0;padding:10px;border:1px solid var(--line);border-radius:12px;background:#101c2e}.manual-row label{min-height:0;display:block}.center{min-height:100dvh;display:grid;place-items:center;padding:20px}.auth{width:min(420px,100%);text-align:center}.logo{font-size:42px;margin-bottom:10px}.auth .card{text-align:left}.notice{background:#26364c;border-radius:12px;padding:11px;color:#c6d8ef;font-size:12px;line-height:1.5}
 .empty{text-align:center;color:var(--muted);padding:25px 10px}.top-actions{display:flex;gap:8px}.top-actions button{padding:9px 11px;font-size:12px}
 .year-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.month{background:#101c2e;border:1px solid var(--line);border-radius:13px;padding:9px;min-width:0}.month h3{text-align:center;margin-bottom:8px;font-size:13px}.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}.day,.dow{display:grid;place-items:center;min-height:27px;font-size:10px;border-radius:6px}.dow{color:var(--muted);font-weight:700}.day.green{background:#174b3b;color:#9cf0ca}.day.red{background:#562b36;color:#ffc0c5}.day.blue{background:#203e66;color:#b8d8ff}.day.today{outline:2px solid #fff;outline-offset:1px;font-weight:900}.day.mine{box-shadow:inset 0 0 0 2px #f3c56a;font-weight:900}.legend{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.legend span{font-size:11px;padding:6px 8px;border-radius:8px}.legend .green{background:#174b3b;color:#9cf0ca}.legend .red{background:#562b36;color:#ffc0c5}.legend .blue{background:#203e66;color:#b8d8ff}
 @media(max-width:600px){.year-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.day,.dow{min-height:25px;font-size:9px}}
-@media(max-width:380px){.year-grid{grid-template-columns:1fr}.nav button{font-size:10px}.formgrid,.manual-row{grid-template-columns:minmax(0,1fr)}.formgrid label,.manual-row label{height:auto;min-height:0}}
+@media(max-width:380px){.year-grid{grid-template-columns:1fr}.nav button{font-size:10px}}
 </style></head>
 <body>
 <div id="auth" class="center"><div class="auth"><div class="logo">🔐</div><h1>Kişisel Asistanım</h1><p class="muted">Sana özel, güvenli kişisel alanın</p><div class="card" id="authbox"></div><p class="small">Kayıtların bu cihazda şifrelenerek saklanır.</p></div></div>
@@ -63,14 +63,21 @@ function renderDebts(){
  const today=localISO();
  $('debts').innerHTML=`<div class="card"><h2>Yeni borç / alacak kaydı</h2>
  <label>Kişi adı</label><input id="dname" placeholder="Kişinin adı">
- <div class="formgrid"><div><label>İşlem türü</label><select id="ddir"><option value="out">Ben para verdim (alacağım)</option><option value="in">Ben para aldım (borcum)</option></select></div><div><label>Kayıt tarihi</label><input id="ddate" type="date" value="${today}"></div></div>
- <label>Toplam tutar (₺)</label><input id="damt" type="number" min="0.01" step="0.01" placeholder="Örn. 30000" onchange="updateInstallmentForm()">
- <div class="formgrid"><div><label>Taksit yöntemi</label><select id="dmode" onchange="updateInstallmentForm()"><option value="equal">Otomatik eşit taksit</option><option value="manual">Taksitleri kendim belirleyeceğim</option></select></div><div><label>Taksit sayısı</label><input id="dcount" type="number" min="1" max="60" value="3" onchange="updateInstallmentForm()"></div></div>
- <div id="equalFields"><div class="formgrid"><div><label>İlk taksit tarihi</label><input id="dfirst" type="date" value="${today}"></div><div><label>Kaç ay arayla?</label><input id="dinterval" type="number" min="1" max="24" value="1"></div></div><p class="small">Tutar kuruşuna kadar eşit bölünür; bölünmeyen kuruş farkı son taksite eklenir.</p></div>
- <div id="manualFields" class="hidden"><p class="small">Her taksitin tutarını ve vadesini gir. Taksitlerin toplamı, toplam borç/alacak tutarına eşit olmalı.</p><div id="manualRows"></div></div>
+ <label>İşlem türü</label><select id="ddir"><option value="out">Ben para verdim (alacağım)</option><option value="in">Ben para aldım (borcum)</option></select>
+ <label>Kayıt tarihi</label><input id="ddate" type="date" value="${today}">
+ <label>Toplam tutar (₺)</label><input id="damt" type="number" min="0.01" step="0.01" placeholder="Örn. 30000" oninput="updateInstallmentForm()">
+ <label>Taksit var mı?</label><select id="dhasInstallments" onchange="updateInstallmentForm()"><option value="yes" selected>Evet, taksitli</option><option value="no">Hayır, tek seferlik</option></select>
+ <div id="installmentFields">
+  <label>Taksit yöntemi</label><select id="dmode" onchange="updateInstallmentForm()"><option value="equal">Otomatik eşit taksit</option><option value="manual">Taksitleri kendim belirleyeceğim</option></select>
+  <label>Taksit sayısı</label><input id="dcount" type="number" min="1" max="60" value="3" oninput="updateInstallmentForm()">
+  <label>İlk taksit tarihi</label><input id="dfirst" type="date" value="${today}" onchange="updateInstallmentForm()">
+  <div id="intervalField"><label>Kaç ay arayla?</label><input id="dinterval" type="number" min="1" max="24" value="1"></div>
+  <div id="equalNote"><p class="small">Tutar kuruşuna kadar eşit bölünür; bölünmeyen kuruş farkı son taksite eklenir.</p></div>
+  <div id="manualFields" class="hidden"><p class="small">Her taksitin tutarını ve vadesini ayrı ayrı gir. Taksitlerin toplamı, toplam borç/alacak tutarına eşit olmalı.</p><div id="manualRows"></div></div>
+ </div>
  <label>İlk ödeme / peşinat (₺)</label><input id="dpaid" type="number" min="0" step="0.01" value="0">
  <label>Açıklama (isteğe bağlı)</label><input id="dnote" placeholder="Örn. Elden verildi">
- <div class="actions"><button onclick="addDebt()">Kaydı ve ödeme planını oluştur</button></div></div>
+ <div class="actions"><button onclick="addDebt()">Kaydı oluştur</button></div></div>
  <div class="card"><h2>Alacaklarım</h2>${vault.debts.filter(x=>x.direction==='out').map(debtRow).join('')||'<div class="empty">Alacak kaydı yok.</div>'}</div>
  <div class="card"><h2>Borçlarım</h2>${vault.debts.filter(x=>x.direction==='in').map(debtRow).join('')||'<div class="empty">Borç kaydı yok.</div>'}</div>`;
  updateInstallmentForm();
@@ -78,40 +85,56 @@ function renderDebts(){
 function localISO(d=new Date()){const x=new Date(d);return `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,'0')}-${String(x.getDate()).padStart(2,'0')}`}
 function addMonthsISO(iso,months){const [y,m,day]=iso.split('-').map(Number);const first=new Date(y,m-1+months,1);const last=new Date(first.getFullYear(),first.getMonth()+1,0).getDate();return localISO(new Date(first.getFullYear(),first.getMonth(),Math.min(day,last)))}
 function updateInstallmentForm(){
+ const hasInstallments=$('dhasInstallments')?.value!=='no';
+ $('installmentFields')?.classList.toggle('hidden',!hasInstallments);
+ if(!hasInstallments)return;
  const mode=$('dmode')?.value||'equal',count=Math.max(1,Math.min(60,Number($('dcount')?.value)||1));
- $('equalFields')?.classList.toggle('hidden',mode!=='equal');$('manualFields')?.classList.toggle('hidden',mode!=='manual');
- if(mode==='manual'&&$('manualRows')){let total=Number($('damt')?.value)||0;let cents=Math.round(total*100),base=Math.floor(cents/count),rem=cents-base*count;let rows='';for(let i=0;i<count;i++){let defaultAmount=((base+(i===count-1?rem:0))/100).toFixed(2);rows+=`<div class="manual-row"><div><label>${i+1}. taksit tutarı (₺)</label><input class="manual-amount" type="number" min="0.01" step="0.01" value="${defaultAmount}"></div><div><label>${i+1}. taksit vadesi</label><input class="manual-date" type="date" value="${addMonthsISO($('dfirst')?.value||localISO(),i*(Number($('dinterval')?.value)||1))}"></div></div>`} $('manualRows').innerHTML=rows;}
+ $('intervalField')?.classList.toggle('hidden',mode!=='equal');
+ $('equalNote')?.classList.toggle('hidden',mode!=='equal');
+ $('manualFields')?.classList.toggle('hidden',mode!=='manual');
+ if(mode==='manual'&&$('manualRows')){
+  let total=Number($('damt')?.value)||0,cents=Math.round(total*100),base=Math.floor(cents/count),rem=cents-base*count,first=$('dfirst')?.value||localISO();
+  let rows='';
+  for(let i=0;i<count;i++){
+   let defaultAmount=((base+(i===count-1?rem:0))/100).toFixed(2);
+   rows+=`<div class="manual-row"><div><label>${i+1}. taksit tutarı (₺)</label><input class="manual-amount" type="number" min="0.01" step="0.01" value="${defaultAmount}"></div><div><label>${i+1}. taksit vadesi</label><input class="manual-date" type="date" value="${addMonthsISO(first,i*(Number($('dinterval')?.value)||1))}"></div></div>`;
+  }
+  $('manualRows').innerHTML=rows;
+ }
 }
-function debtPaid(x){return Array.isArray(x.installments)?(Number(x.openingPaidAmount)||0)+x.installments.reduce((s,i)=>s+(Number(i.paidAmount)||0),0):(Number(x.paidAmount)||0)}
+function debtPaid(x){return Array.isArray(x.installments)&&x.installments.length?(Number(x.openingPaidAmount)||0)+x.installments.reduce((s,i)=>s+(Number(i.paidAmount)||0),0):(Number(x.paidAmount)||0)}
 function debtRemaining(x){return Math.max(0,(Number(x.amount)||0)-debtPaid(x))}
 function syncDebt(x){x.paidAmount=debtPaid(x);x.paid=x.paidAmount>=Number(x.amount)-0.005}
 function dateLabel(d){return d?d.split('-').reverse().join('.'):'Tarih yok'}
 function debtRow(x){
  const paid=debtPaid(x),rem=debtRemaining(x),pct=x.amount?Math.min(100,Math.round(paid/x.amount*100)):0;
  let installments=Array.isArray(x.installments)?x.installments:[];
- let schedule=installments.length?`<div style="margin-top:12px"><b class="small">TAKSİT PLANI (${installments.filter(i=>(Number(i.paidAmount)||0)>=Number(i.amount)-0.005).length}/${installments.length} tamamlandı)</b>${installments.map((i,n)=>{let ir=Math.max(0,Number(i.amount)-Number(i.paidAmount||0)),done=ir<=0.005,late=!done&&i.dueDate<localISO();return `<div class="installment ${done?'done':late?'pastdue':''}"><div class="row"><b>${n+1}. taksit · ${money(i.amount)}</b><span class="pill ${done?'green':late?'red':'gold'}">${done?'Ödendi':late?'Gecikti':'Bekliyor'}</span></div><div class="row small"><span>Vade: ${dateLabel(i.dueDate)}</span><span>Kalan: ${money(ir)}</span></div>${(i.payments||[]).length?`<div class="small" style="margin-top:6px">Ödemeler: ${(i.payments||[]).map(p=>`${money(p.amount)} (${dateLabel(p.date)})`).join(' · ')}</div>`:''}${!done?`<div class="actions"><button class="secondary" onclick="payment('${x.id}','${i.id}')">Bu taksite ödeme ekle</button></div>`:''}</div>`}).join('')}</div>`:'<p class="small">Eski kayıt · Henüz taksit planı yok.</p>';
+ let schedule=installments.length?`<div style="margin-top:12px"><b class="small">TAKSİT PLANI (${installments.filter(i=>(Number(i.paidAmount)||0)>=Number(i.amount)-0.005).length}/${installments.length} tamamlandı)</b>${installments.map((i,n)=>{let ir=Math.max(0,Number(i.amount)-Number(i.paidAmount||0)),done=ir<=0.005,late=!done&&i.dueDate<localISO();return `<div class="installment ${done?'done':late?'pastdue':''}"><div class="row"><b>${n+1}. taksit · ${money(i.amount)}</b><span class="pill ${done?'green':late?'red':'gold'}">${done?'Ödendi':late?'Gecikti':'Bekliyor'}</span></div><div class="row small"><span>Vade: ${dateLabel(i.dueDate)}</span><span>Kalan: ${money(ir)}</span></div>${(i.payments||[]).length?`<div class="small" style="margin-top:6px">Ödemeler: ${(i.payments||[]).map(p=>`${money(p.amount)} (${dateLabel(p.date)})`).join(' · ')}</div>`:''}${!done?`<div class="actions"><button class="secondary" onclick="payment('${x.id}','${i.id}')">Bu taksite ödeme ekle</button></div>`:''}</div>`}).join('')}</div>`:(x.installmentEnabled===false?'<p class="small">Tek seferlik kayıt · Taksit planı yok.</p>':'<p class="small">Eski kayıt · Henüz taksit planı yok.</p>');
  let legacyHistory=(x.paymentHistory||[]).length?`<div class="small">Önceki ödemeler: ${(x.paymentHistory||[]).map(p=>`${money(p.amount)} (${dateLabel(p.date)})`).join(' · ')}</div>`:'';let legacyActions=installments.length?'':`<button class="secondary" onclick="createLegacyPlan('${x.id}')">Taksit planı oluştur</button><button class="secondary" onclick="payment('${x.id}')">Ödeme ekle</button>`;
  return `<div class="item"><div class="row"><b>${esc(x.name)}</b><span class="pill ${rem===0?'green':paid>0?'gold':'red'}">${rem===0?'Ödendi':paid>0?'Kısmen ödendi':'Ödenmedi'}</span></div><div class="small">${dateLabel(x.date)} · ${x.direction==='out'?'Alacağım':'Borcum'} ${x.note?'· '+esc(x.note):''}</div><div class="row" style="margin-top:8px"><span class="small">Toplam: ${money(x.amount)}</span><b>${money(rem)} kaldı</b></div><div class="progress"><span style="width:${pct}%"></span></div><div class="row small"><span>${pct}% ödendi · ${money(paid)}</span><span>${money(x.amount)} toplam</span></div>${legacyHistory}${schedule}<div class="actions">${legacyActions}<button class="danger" onclick="removeDebt('${x.id}')">Sil</button></div></div>`;
 }
 async function addDebt(){
- let name=$('dname').value.trim(),amount=Number($('damt').value),paid=Number($('dpaid').value||0),date=$('ddate').value,count=Math.max(1,Math.min(60,Number($('dcount').value)||1));
+ let name=$('dname').value.trim(),amount=Number($('damt').value),paid=Number($('dpaid').value||0),date=$('ddate').value;
  if(!name||!date||!Number.isFinite(amount)||amount<=0||paid<0||paid>amount){alert('Bilgileri kontrol et. Peşinat toplam tutardan fazla olamaz.');return}
- let installments=[],mode=$('dmode').value;
- if(mode==='equal'){
-  let first=$('dfirst').value,interval=Number($('dinterval').value);
-  if(!first||!Number.isInteger(interval)||interval<1||interval>24){alert('İlk taksit tarihini ve 1-24 ay arası taksit aralığını kontrol et.');return}
-  let cents=Math.round(amount*100),base=Math.floor(cents/count),rem=cents-base*count;
-  for(let i=0;i<count;i++)installments.push({id:crypto.randomUUID(),amount:(base+(i===count-1?rem:0))/100,dueDate:addMonthsISO(first,i*interval),paidAmount:0,payments:[]});
- }else{
-  let amounts=[...document.querySelectorAll('.manual-amount')].map(e=>Number(e.value)),dates=[...document.querySelectorAll('.manual-date')].map(e=>e.value);
-  if(amounts.length!==count||amounts.some((v,i)=>!Number.isFinite(v)||v<=0||!dates[i])){alert('Her taksit için geçerli tutar ve vade gir.');return}
-  let sum=amounts.reduce((a,b)=>a+Math.round(b*100),0),total=Math.round(amount*100);
-  if(sum!==total){alert('Manuel taksitlerin toplamı, toplam borç/alacak tutarıyla aynı olmalı. Şu anki toplam: '+money(sum/100));return}
-  installments=amounts.map((v,i)=>({id:crypto.randomUUID(),amount:Math.round(v*100)/100,dueDate:dates[i],paidAmount:0,payments:[]}));
+ let hasInstallments=$('dhasInstallments').value==='yes',installments=[],mode=hasInstallments?$('dmode').value:null;
+ if(hasInstallments){
+  let count=Math.max(1,Math.min(60,Number($('dcount').value)||1));
+  if(mode==='equal'){
+   let first=$('dfirst').value,interval=Number($('dinterval').value);
+   if(!first||!Number.isInteger(interval)||interval<1||interval>24){alert('İlk taksit tarihini ve 1-24 ay arası taksit aralığını kontrol et.');return}
+   let cents=Math.round(amount*100),base=Math.floor(cents/count),rem=cents-base*count;
+   for(let i=0;i<count;i++)installments.push({id:crypto.randomUUID(),amount:(base+(i===count-1?rem:0))/100,dueDate:addMonthsISO(first,i*interval),paidAmount:0,payments:[]});
+  }else{
+   let amounts=[...document.querySelectorAll('.manual-amount')].map(e=>Number(e.value)),dates=[...document.querySelectorAll('.manual-date')].map(e=>e.value);
+   if(amounts.length!==count||amounts.some((v,i)=>!Number.isFinite(v)||v<=0||!dates[i])){alert('Her taksit için geçerli tutar ve vade gir.');return}
+   let sum=amounts.reduce((a,b)=>a+Math.round(b*100),0),total=Math.round(amount*100);
+   if(sum!==total){alert('Manuel taksitlerin toplamı, toplam borç/alacak tutarıyla aynı olmalı. Şu anki toplam: '+money(sum/100));return}
+   installments=amounts.map((v,i)=>({id:crypto.randomUUID(),amount:Math.round(v*100)/100,dueDate:dates[i],paidAmount:0,payments:[]}));
+  }
+  let left=Math.round(paid*100)/100;
+  for(let inst of installments){if(left<=0)break;let take=Math.min(inst.amount,left);inst.paidAmount=take;inst.payments.push({amount:take,date});left=Math.round((left-take)*100)/100}
  }
- let left=Math.round(paid*100)/100,paidDate=date;
- for(let inst of installments){if(left<=0)break;let take=Math.min(inst.amount,left);inst.paidAmount=take;inst.payments.push({amount:take,date:paidDate});left=Math.round((left-take)*100)/100}
- let item={id:crypto.randomUUID(),name,direction:$('ddir').value,date,amount:Math.round(amount*100)/100,paidAmount:paid,note:$('dnote').value.trim(),paid:paid>=amount,installmentMode:mode,installments};
+ let item={id:crypto.randomUUID(),name,direction:$('ddir').value,date,amount:Math.round(amount*100)/100,paidAmount:paid,note:$('dnote').value.trim(),paid:paid>=amount,installmentEnabled:hasInstallments,installmentMode:mode,installments};
  syncDebt(item);vault.debts.push(item);await save();renderAll();
 }
 async function payment(id,installmentId){
