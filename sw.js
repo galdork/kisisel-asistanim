@@ -1,4 +1,4 @@
-const CACHE = 'kisisel-asistanim-v10';
+const CACHE = 'kisisel-asistanim-v11';
 const FILES = ['./', './index.html'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
